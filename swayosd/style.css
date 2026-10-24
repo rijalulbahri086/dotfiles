@@ -1,0 +1,39 @@
+
+window {
+    background-color: rgba(24, 24, 37, 0.96);
+    border: 2px solid #89b4fa;
+    border-radius: 18px;
+}
+
+window box {
+    padding: 12px 18px;
+}
+
+image {
+    color: #cba6f7;
+}
+
+label {
+    color: #cdd6f4;
+    font-family: "JetBrains Mono";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+progressbar {
+    min-height: 8px;
+    border-radius: 8px;
+}
+
+progressbar trough {
+    background-color: #313244;
+    border-radius: 8px;
+    border: none;
+}
+
+progressbar progress {
+    background-color: #89b4fa;
+    border-radius: 8px;
+    border: none;
+}
+

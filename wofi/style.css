@@ -1,0 +1,51 @@
+@import "/home/balabalacom/.cache/wal/colors-waybar.css";
+
+* {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+window {
+    background-color: rgba(15, 17, 28, 0.97);
+    border: 1px solid #8aadff;
+    border-radius: 14px;
+}
+
+#outer-box {
+    padding: 14px;
+}
+
+#input {
+    background-color: #202438;
+    color: #e6e8f5;
+    border: 1px solid #343a58;
+    border-radius: 9px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#inner-box {
+    margin-top: 4px;
+}
+
+#entry {
+    padding: 9px;
+    border-radius: 8px;
+    color: #e6e8f5;
+}
+
+#entry:selected {
+    background-color: #343a58;
+    color: #a8c5ff;
+}
+
+#text {
+    margin-left: 8px;
+}
+
+window { background-color: alpha(@background, 0.92); color: @foreground; border: 2px solid @color4; border-radius: 12px; }
+#input { background-color: alpha(@color0, 0.6); color: @foreground; border: 1px solid @color8; border-radius: 8px; }
+#inner-box, #outer-box, #scroll { background-color: transparent; }
+#entry { color: @foreground; border-radius: 8px; padding: 4px; }
+#entry:selected { background-color: @color4; color: @background; }
+#text:selected { color: @background; }

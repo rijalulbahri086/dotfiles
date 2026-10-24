@@ -1,0 +1,16 @@
+# Abaikan semua folder dan file di dalam ~/.config
+/*
+
+# Pengecualian: Tetap simpan file .gitignore
+!.gitignore
+
+# Folder konfigurasi utama Hyprland & Ricing
+!hypr/
+!waybar/
+!kitty/
+!wofi/
+!btop/
+!swayosd/
+!wal/
+!backup-tema/
+!backup-theme/

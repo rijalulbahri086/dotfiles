@@ -1,0 +1,11 @@
+show=drun
+width=600
+height=400
+location=center
+prompt=Search applications...
+allow_images=true
+insensitive=true
+matching=fuzzy
+no_actions=true
+halign=fill
+orientation=vertical

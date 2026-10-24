@@ -1,0 +1,31 @@
+SUPER + Enter            Buka terminal (kitty)
+SUPER + Space            Launcher aplikasi (wofi)
+SUPER + E                File manager (Thunar)
+SUPER + H                Daftar shortcut ini
+SUPER + Esc              Task manager (btop)
+SUPER + Shift + Esc      Menu kill aplikasi
+SUPER + Q                Tutup jendela
+SUPER + F                Fullscreen penuh
+SUPER + M                Maximize (bar tetap terlihat)
+SUPER + V                Floating / tiling
+SUPER + Shift + M        Keluar dari Hyprland
+SUPER + Panah            Pindah fokus antar jendela
+SUPER + Shift + Panah    Geser posisi jendela
+SUPER + N                Minimize (sembunyikan jendela)
+SUPER + Shift + N        Pulihkan jendela terakhir diminimalkan
+Klik angka MIN (bar)     Pilih jendela yang mau dipulihkan
+SUPER + 1..5             Pindah workspace
+SUPER + Shift + 1..5     Pindahkan jendela ke workspace
+SUPER + Scroll           Ganti workspace
+SUPER + Drag kiri        Geser jendela dengan mouse
+SUPER + Drag kanan       Ubah ukuran jendela
+Tombol Volume/Brightness OSD via swayosd
+SUPER + Tab              Pindah jendela berikutnya
+SUPER + Shift + Tab      Pindah jendela sebelumnya
+SUPER + B                Bluetooth (bluetui)
+SUPER + Shift + W        Ganti wallpaper
+Print / SUPER + Shift + S   Screenshot area, disalin ke clipboard
+SHIFT + Print            Screenshot area, disimpan ke file
+CTRL + Print             Screenshot seluruh layar, disimpan ke file
+SUPER + P                Menu power (sleep, logout, restart, shutdown)
+Geser 3 jari kiri/kanan  Pindah workspace (touchpad)

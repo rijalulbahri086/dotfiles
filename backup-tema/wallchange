@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+WALLPAPER="${1:-}"
+
+if [[ -z "$WALLPAPER" || ! -f "$WALLPAPER" ]]; then
+    echo "Penggunaan: wallchange /path/ke/wallpaper.jpg"
+    exit 1
+fi
+
+WALLPAPER="$(realpath "$WALLPAPER")"
+
+# Pastikan Hyprland aktif
+if [[ -z "${HYPRLAND_INSTANCE_SIGNATURE:-}" ]]; then
+    echo "Jalankan perintah ini dari sesi Hyprland."
+    exit 1
+fi
+
+# Ganti wallpaper pada monitor laptop
+if ! hyprctl hyprpaper wallpaper "eDP-1,$WALLPAPER"; then
+    echo "Gagal mengganti wallpaper."
+    exit 1
+fi
+
+# Ambil warna dari wallpaper dan ekspor template Matugen
+if ! matugen image "$WALLPAPER" \
+    --source-color-index 0 \
+    --type scheme-tonal-spot \
+    --mode dark; then
+    echo "Matugen gagal. Wallpaper sudah diganti, tetapi tema belum diperbarui."
+    exit 1
+fi
+
+# Muat ulang Waybar agar membaca warna baru
+pkill -SIGUSR2 waybar 2>/dev/null || true
+
+echo "Wallpaper dan palet warna berhasil diperbarui."
