@@ -29,3 +29,11 @@ SHIFT + Print            Screenshot area, disimpan ke file
 CTRL + Print             Screenshot seluruh layar, disimpan ke file
 SUPER + P                Menu power (sleep, logout, restart, shutdown)
 Geser 3 jari kiri/kanan  Pindah workspace (touchpad)
+SUPER + A                Menu AI (Claude, ChatGPT, Gemini), tekan lagi untuk menyembunyikan
+SUPER/ALT + Tab          Pindah jendela, termasuk yang diminimalkan; tetap fullscreen
+SUPER/ALT + Shift + Tab  Pindah ke jendela sebelumnya
+SUPER + M                Maximize (Waybar dan jendela AI tetap terlihat)
+SUPER + A                Menu AI (Claude, ChatGPT, Gemini), tekan lagi untuk menyembunyikan
+SUPER/ALT + Tab          Pindah jendela, termasuk yang diminimalkan; tetap fullscreen
+SUPER/ALT + Shift + Tab  Pindah ke jendela sebelumnya
+SUPER + M                Maximize (Waybar dan jendela AI tetap terlihat)

@@ -70,8 +70,6 @@ hl.bind(mainMod .. " + M", hl.dsp.window.fullscreen({ mode = "maximized", action
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exit())
 
-hl.bind("ALT + TAB", hl.dsp.window.cycle_next({ next = true }))
-hl.bind("ALT + SHIFT + TAB", hl.dsp.window.cycle_next({ prev = true }))
 
 hl.bind(mainMod .. " + LEFT", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + RIGHT", hl.dsp.focus({ direction = "right" }))
@@ -182,3 +180,10 @@ for _, p in ipairs({
     })
 end
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("~/.local/bin/aichat"))
+
+hl.config({ general = { extend_border_grab_area = 20 } })
+
+hl.bind("SUPER + TAB", hl.dsp.exec_cmd("~/.local/bin/cycle-win"))
+hl.bind("SUPER + SHIFT + TAB", hl.dsp.exec_cmd("~/.local/bin/cycle-win prev"))
+hl.bind("ALT + TAB", hl.dsp.exec_cmd("~/.local/bin/cycle-win"))
+hl.bind("ALT + SHIFT + TAB", hl.dsp.exec_cmd("~/.local/bin/cycle-win prev"))
